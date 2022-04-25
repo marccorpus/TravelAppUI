@@ -1,20 +1,9 @@
-import {StyleSheet, View, Text} from 'react-native';
 import React from 'react';
 
+import Navigation from './src/navigation';
+
 const App = () => {
-  return (
-    <View style={styles.container}>
-      <Text>Hello World</Text>
-    </View>
-  );
+  return <Navigation />;
 };
 
 export default App;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
