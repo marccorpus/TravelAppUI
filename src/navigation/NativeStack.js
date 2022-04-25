@@ -7,10 +7,12 @@ import DetailsScreen from '../screens/DetailsScreen';
 const Stack = createNativeStackNavigator();
 
 const NativeStack = () => {
-  <Stack.Navigator>
-    <Stack.Screen name="bottom-tabs" component={BottomTabs} />
-    <Stack.Screen name="details" component={DetailsScreen} />
-  </Stack.Navigator>;
+  return (
+    <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Screen name="bottom-tabs" component={BottomTabs} />
+      <Stack.Screen name="details" component={DetailsScreen} />
+    </Stack.Navigator>
+  );
 };
 
 export default NativeStack;
