@@ -58,5 +58,12 @@ const styles = StyleSheet.create({
   tabBar: {
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
+    shadowColor: colors.black,
+    shadowOffset: {
+      width: 0,
+      height: -1,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 5,
   },
 });

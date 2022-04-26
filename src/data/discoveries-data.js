@@ -3,7 +3,7 @@ const data = [
     id: 'discover-1',
     title: 'Kayaking in the Tofino Sea',
     location: 'Canada',
-    image: require('../images/kayak.png'),
+    image: require('../assets/images/kayak.png'),
     imageBig: require('../assets/images/kayak-big.png'),
     description:
       "An ideal introduction to sea kayaking around the stunning historical Islands of Tofino's harbour. Come explore the spectacular scenery of the area and learn what makes the area so fascinating.",
