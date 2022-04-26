@@ -3,13 +3,13 @@ import {StyleSheet, Pressable, View, Text} from 'react-native';
 
 import colors from '../constants/colors';
 
-const Button = ({onPress, text, style}) => {
+const Button = ({onPress, title, style}) => {
   return (
     <Pressable
       onPress={onPress}
       style={({pressed}) => pressed && styles.pressed}>
       <View style={[styles.button, style]}>
-        <Text style={styles.text}>{text}</Text>
+        <Text style={styles.title}>{title}</Text>
       </View>
     </Pressable>
   );
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 16,
   },
-  text: {
+  title: {
     color: colors.white,
     textAlign: 'center',
     fontSize: 18,
