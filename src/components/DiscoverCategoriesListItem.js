@@ -15,7 +15,7 @@ export default DiscoverCategoriesListItem;
 
 const styles = StyleSheet.create({
   text: {
-    color: colors.gray,
+    color: colors.mediumGray,
     fontSize: 16,
     fontFamily: 'Lato-Regular',
   },

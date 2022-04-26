@@ -27,7 +27,7 @@ const HomeScreen = () => {
 
         <SectionTitle
           text="Discover"
-          style={{...styles.sectionTitle, ...styles.secondarySectionTitle}}
+          style={{...styles.sectionTitle, ...styles.primarySectionTitle}}
         />
         <DiscoverCategoriesList
           data={discoverCategoriesData}

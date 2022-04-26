@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Pressable, Text} from 'react-native';
+import {StyleSheet, Text} from 'react-native';
 
 import ImageCard from './ImageCard';
 import Location from './Location';
@@ -8,19 +8,17 @@ import colors from '../constants/colors';
 
 const DiscoveriesListItem = ({image, title, location}) => {
   return (
-    <Pressable style={({pressed}) => pressed && styles.pressed} onPress={null}>
-      <ImageCard image={image} style={[styles.image, styles.spacing]}>
-        <Text style={styles.title}>{title}</Text>
+    <ImageCard image={image} style={[styles.image, styles.spacing]}>
+      <Text style={styles.title}>{title}</Text>
 
-        <Location
-          location={location}
-          iconSize={15}
-          iconColor={colors.white}
-          fontSize={12}
-          color={colors.white}
-        />
-      </ImageCard>
-    </Pressable>
+      <Location
+        location={location}
+        iconSize={15}
+        iconColor={colors.white}
+        fontSize={12}
+        color={colors.white}
+      />
+    </ImageCard>
   );
 };
 
@@ -35,9 +33,6 @@ const styles = StyleSheet.create({
   },
   spacing: {
     marginLeft: 20,
-  },
-  pressed: {
-    opacity: 0.75,
   },
   title: {
     fontFamily: 'Lato-Bold',

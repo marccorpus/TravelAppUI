@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
     height: 30,
   },
   title: {
-    color: colors.gray,
-    fontFamily: 'Lato-Bold',
+    color: colors.mediumGray,
+    fontFamily: 'Lato-Regular',
     fontSize: 16,
     marginTop: 8,
   },
